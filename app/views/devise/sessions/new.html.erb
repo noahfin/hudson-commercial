@@ -1,0 +1,65 @@
+
+    <div class="full-page"  filter-color="black"  id="login-outer">
+      <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+      <div class="content">
+        <div class="container">
+          <div class="col-md-4 ml-auto mr-auto">
+            <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              <div class="card card-login card-plain">
+                <div class="card-header ">
+                  <div class="logo-container text-center">
+                  <i id="icon" class="fa fa-database" style="text-shadow: rgb(25, 41, 57) 0px 0px 0px, rgb(27, 44, 62) 1px 1px 0px, rgb(30, 48, 66) 2px 2px 0px, rgb(32, 51, 71) 3px 3px 0px, rgb(34, 55, 76) 4px 4px 0px; font-size: 61px; color: rgb(84, 84, 84); height: 133px; width: 133px; line-height: 133px; border-radius: 50%; text-align: center; background-color: rgb(36, 58, 81);"></i>
+
+                  </div>
+                    <div class="text-center" style="color: white !important;">
+                    <%= devise_error_messages! %>
+                    <%= render 'layouts/messages' %>
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <div class="input-group no-border form-control-lg">
+                    <span class="input-group-addon">
+                      <i class="now-ui-icons users_circle-08"></i>
+                    </span>
+                    <input class="form-control" autofocus="autofocus" type="email" value="" name="user[email]" id="user_email" placeholder="Enter email" />
+                  </div>
+                  <div class="input-group no-border form-control-lg">
+                    <span class="input-group-addon">
+                      <i class="now-ui-icons text_caps-small"></i>
+                    </span>
+                    <input class="form-control" type="password" name="user[password]" id="user_password", placeholder="Enter Password" />
+                  </div>
+                </div>
+                <div class="card-footer ">
+                  <button type="submit" class="btn btn-primary btn-round btn-lg btn-block mb-3">Welcom Back</button>
+
+                  <div class="pull-left  white-text pl-3 pt-2">
+                    <% if devise_mapping.rememberable? %>
+                      <%= f.label :remember_me, "Remember Me", class: 'deviselabels' %>&nbsp;
+                      <%= f.check_box :remember_me %>
+                    <% end %>
+
+                  </div>
+                  <div class="pull-right pr-3">
+                    <h6> </h6>
+                    <p class="white-text change-to-white " >
+                         <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+                         <%= link_to "Need password?", new_password_path(resource_name) %><br />
+                         <% end -%>
+                         </p>
+
+                  </div>
+                  <h6 class="text-center sign-up-b white-text" style="margin-top: 8rem;">
+                      <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+                      <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+                      <% end -%>
+                    </h6>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- 243A51 -->
