@@ -456,3 +456,9 @@ input[type=radio],
 .main-task-h {
   margin-top: -30px;
 }
+
+@media (max-width: 770px) {
+  .card-login  {
+    margin-top: -5rem;
+  }
+}
