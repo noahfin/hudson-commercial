@@ -459,6 +459,12 @@ input[type=radio],
 
 @media (max-width: 770px) {
   .card-login  {
-    margin-top: -5rem;
+    margin-top: -6rem;
+  }
+  .logo-cred {
+    margin-bottom: -.7rem !important;
+  }
+  .cred-footer {
+    margin-top: -2.3rem !important;
   }
 }

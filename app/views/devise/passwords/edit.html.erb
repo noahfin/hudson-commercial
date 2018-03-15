@@ -58,7 +58,7 @@
             <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
               <div class="card card-login card-plain">
                 <div class="card-header ">
-                  <div class=" mb-4 text-center">
+                  <div class=" mb-4 logo-cred text-center">
                   <i id="icon" class="fa fa-database" style="text-shadow: rgb(25, 41, 57) 0px 0px 0px, rgb(27, 44, 62) 1px 1px 0px, rgb(30, 48, 66) 2px 2px 0px, rgb(32, 51, 71) 3px 3px 0px, rgb(34, 55, 76) 4px 4px 0px; font-size: 61px; color: rgb(84, 84, 84); height: 133px; width: 133px; line-height: 133px; border-radius: 50%; text-align: center; background: #1a1d2b; margin: auto;"></i>
                   </div>
                    <div style="color: white !important;">
@@ -80,7 +80,7 @@
                     <input class="form-control" autofocus="autofocus" type="password" value="" name="user[password_confirmation]" id="user_password_confirmation" placeholder="Enter password confirmation" />
                   </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group cred-footer">
                   <button type="submit" class="btn btn-round btn-block mb-3">Edit Password</button>
                 </div>
                 <%= f.input :reset_password_token, as: :hidden %>
