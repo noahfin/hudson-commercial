@@ -7,8 +7,8 @@ class AddTypesToTouches < ActiveRecord::Migration[5.1]
     add_column :touches, :type_cellphone, :string
     add_column :touches, :type_landline, :boolean
     add_column :touches, :type_flyer, :boolean
-    add_column :touches, :type_document, :boolaen
+    add_column :touches, :type_document, :boolean
     add_column :touches, :type_video_chat, :boolean
-    remove_column :touches, :way_of_contact
+    remove_column :touches, :way_of_contact, :string
   end
 end

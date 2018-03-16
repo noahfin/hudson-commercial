@@ -203,8 +203,22 @@ ActiveRecord::Schema.define(version: 20180316013042) do
     t.index ["user_id", "todo_id"], name: "index_todos_users_on_user_id_and_todo_id"
   end
 
-# Could not dump table "touches" because of following StandardError
-#   Unknown type '' for column 'type_document'
+  create_table "touches", force: :cascade do |t|
+    t.string "name"
+    t.boolean "success"
+    t.date "date_touched"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "type_meeting"
+    t.boolean "type_personal"
+    t.boolean "type_email"
+    t.boolean "type_postcard"
+    t.string "type_cellphone"
+    t.boolean "type_landline"
+    t.boolean "type_flyer"
+    t.boolean "type_document"
+    t.boolean "type_video_chat"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
