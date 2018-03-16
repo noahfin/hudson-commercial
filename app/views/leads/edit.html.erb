@@ -1,6 +1,11 @@
+<%= render '/layouts/sidebar'  %>
+<%= render 'layouts/navigation'  %>
+<div class="container-8">
+
 <h1>Editing Lead</h1>
 
 <%= render 'form', lead: @lead %>
 
 <%= link_to 'Show', @lead %> |
 <%= link_to 'Back', leads_path %>
+</div>

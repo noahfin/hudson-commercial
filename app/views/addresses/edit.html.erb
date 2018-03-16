@@ -1,6 +1,10 @@
+<%= render '/layouts/sidebar'  %>
+<%= render 'layouts/navigation'  %>
+<div class="container-8">
 <h1>Editing Address</h1>
 
 <%= render 'form', address: @address %>
 
 <%= link_to 'Show', @address %> |
 <%= link_to 'Back', addresses_path %>
+</div>

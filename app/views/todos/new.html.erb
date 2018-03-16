@@ -1,5 +1,9 @@
+<%= render '/layouts/sidebar'  %>
+<%= render 'layouts/navigation'  %>
+<div class="container-8">
 <h1>New Todo</h1>
 
 <%= render 'form', todo: @todo %>
 
 <%= link_to 'Back', todos_path %>
+</div>
