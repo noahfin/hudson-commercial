@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @campaign.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @campaign.type %>
+</p>
+
+<p>
+  <strong>Total in list:</strong>
+  <%= @campaign.total_in_list %>
+</p>
+
+<p>
+  <strong>Followed ups:</strong>
+  <%= @campaign.followed_ups %>
+</p>
+
+<p>
+  <strong>Call backs:</strong>
+  <%= @campaign.call_backs %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @campaign.user %>
+</p>
+
+<p>
+  <strong>Todo:</strong>
+  <%= @campaign.todo %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @campaign.company %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @campaign.project %>
+</p>
+
+<p>
+  <strong>Assigned to:</strong>
+  <%= @campaign.assigned_to %>
+</p>
+
+<p>
+  <strong>Campaignable:</strong>
+  <%= @campaign.campaignable %>
+</p>
+
+<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
+<%= link_to 'Back', campaigns_path %>

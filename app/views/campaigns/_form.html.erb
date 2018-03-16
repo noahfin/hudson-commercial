@@ -1,0 +1,22 @@
+
+<%= simple_form_for(@campaign) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :type %>
+    <%= f.input :total_in_list %>
+    <%= f.input :followed_ups %>
+    <%= f.input :call_backs %>
+    <%= f.association :user %>
+    <%= f.association :todo %>
+    <%= f.association :company %>
+    <%= f.association :project %>
+    <%= f.input :assigned_to %>
+    <%= f.association :campaignable %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

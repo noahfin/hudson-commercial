@@ -1,0 +1,2 @@
+class Touch < ApplicationRecord
+end

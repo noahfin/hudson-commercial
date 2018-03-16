@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @touch.name %>
+</p>
+
+<p>
+  <strong>Way of contact:</strong>
+  <%= @touch.way_of_contact %>
+</p>
+
+<p>
+  <strong>Success:</strong>
+  <%= @touch.success %>
+</p>
+
+<p>
+  <strong>Date touched:</strong>
+  <%= @touch.date_touched %>
+</p>
+
+<%= link_to 'Edit', edit_touch_path(@touch) %> |
+<%= link_to 'Back', touches_path %>

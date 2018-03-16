@@ -1,0 +1,29 @@
+
+<%= simple_form_for(@company) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :phone %>
+    <%= f.input :fax %>
+    <%= f.input :website %>
+    <%= f.input :owns %>
+    <%= f.input :rents %>
+    <%= f.input :industry %>
+    <%= f.input :SF_using %>
+    <%= f.input :sic_code %>
+    <%= f.input :source_of_name %>
+    <%= f.input :suite %>
+    <%= f.input :total_employees %>
+    <%= f.input :location_requirements %>
+    <%= f.input :year_founded %>
+    <%= f.input :data_checked %>
+    <%= f.input :exclussive %>
+    <%= f.input :active %>
+    <%= f.association :companyable %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

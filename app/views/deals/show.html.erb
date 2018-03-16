@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @deal.name %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @deal.company %>
+</p>
+
+<p>
+  <strong>Commission:</strong>
+  <%= @deal.commission %>
+</p>
+
+<p>
+  <strong>Time of close:</strong>
+  <%= @deal.time_of_close %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @deal.user %>
+</p>
+
+<p>
+  <strong>Todo:</strong>
+  <%= @deal.todo %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @deal.company %>
+</p>
+
+<p>
+  <strong>Dealable:</strong>
+  <%= @deal.dealable %>
+</p>
+
+<%= link_to 'Edit', edit_deal_path(@deal) %> |
+<%= link_to 'Back', deals_path %>

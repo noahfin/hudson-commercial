@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @todo.title %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @todo.created_by %>
+</p>
+
+<p>
+  <strong>Finshed:</strong>
+  <%= @todo.finshed %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @todo.user_id %>
+</p>
+
+<p>
+  <strong>Todo type:</strong>
+  <%= @todo.todo_type %>
+</p>
+
+<p>
+  <strong>Todoable:</strong>
+  <%= @todo.todoable %>
+</p>
+
+<%= link_to 'Edit', edit_todo_path(@todo) %> |
+<%= link_to 'Back', todos_path %>

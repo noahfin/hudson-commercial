@@ -1,5 +1,7 @@
 class User < ApplicationRecord
-
+  has_many :address, as: :addressable
+  has_many :comments, as: :commentable
+  has_and_belongs_to_many :todos
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
 

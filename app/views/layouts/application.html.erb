@@ -19,14 +19,14 @@
   <body class=" sidebar-mini">
 <div class="wrapper ">
 
+      <% if user_signed_in? %>
+           <%= render '/layouts/sidebar'  %>
+          <%= render 'layouts/navigation'  %>
 
-        <%= render '/layouts/sidebar' unless  current_page?(root_url) || current_page?(new_user_session_url)|| current_page?(new_user_registration_url) %>
-
-        <%= render 'layouts/navigation'  unless current_page?(root_url) || current_page?(new_user_session_url) || current_page?(new_user_registration_url) %>
-
+      <%end%>
        <!--  new_user_password -->
+<%= yield %>
 
-        <%= yield %>
     </div>
 
     </div>

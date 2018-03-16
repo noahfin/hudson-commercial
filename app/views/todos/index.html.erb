@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Todos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Created by</th>
+      <th>Finshed</th>
+      <th>User</th>
+      <th>Todo type</th>
+      <th>Todoable</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todos.each do |todo| %>
+      <tr>
+        <td><%= todo.title %></td>
+        <td><%= todo.created_by %></td>
+        <td><%= todo.finshed %></td>
+        <td><%= todo.user_id %></td>
+        <td><%= todo.todo_type %></td>
+        <td><%= todo.todoable %></td>
+        <td><%= link_to 'Show', todo %></td>
+        <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+        <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Todo', new_todo_path %>
