@@ -82,12 +82,22 @@
 .main-task-h {
   margin-top: -30px;
 }
+@media (min-width: 1260px) {
+  .card-login {
+     margin-top: -6rem;
+  }
+  .cred-col {
+     margin-left: -1rem !important;
+  }
+
+}
 @media (max-width: 1200px) {
   .card-login {
      margin-top: -6rem;
   }
   .cred-col {
     max-width: 40% !important;
+    margin: auto;
   }
 
 }
@@ -97,6 +107,7 @@
   }
   .cred-col {
     max-width: 70% !important;
+    margin: auto;
   }
 
 }
@@ -135,6 +146,9 @@
     line-height: 75px!important;
     font-size: 34px !important;
  }
+   .cred-col {
+    max-width: 100% !important;
+  }
 }
 
 
