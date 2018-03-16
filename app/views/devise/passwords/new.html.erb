@@ -56,7 +56,7 @@
 
         <div class="container">
       <div class="content cred-contain">
-          <div class="col-md-4 ml-auto mr-auto">
+          <div class="col-md-4 ml-auto mr-auto cred-col">
             <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
 
               <div class="card card-login card-plain">
@@ -86,7 +86,7 @@
                       <% end -%>
                     </h6>
                   </div>
-                  <div class="pull-right">
+                  <div class="pull-right right-link-b-creds">
                        <h6><%- if controller_name != 'sessions' %>
                       <%= link_to "Log in", new_session_path(resource_name) %><br />
                     <% end -%> </h6>

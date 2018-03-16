@@ -82,11 +82,38 @@
 .main-task-h {
   margin-top: -30px;
 }
+@media (max-width: 1200px) {
+  .card-login {
+     margin-top: -6rem;
+  }
+  .cred-col {
+    max-width: 40% !important;
+  }
 
+}
+@media (max-width: 992px) {
+  .card-login {
+     margin-top: -6rem;
+  }
+  .cred-col {
+    max-width: 70% !important;
+  }
+
+}
 @media (max-width: 770px) {
   .card-login {
      margin-top: -6rem;
   }
+  .link-b-creds {
+    float: none;
+    width: 50%;
+    text-align: center !important;
+    margin: auto  !important;
+    padding-left: 0px  !important;
+
+  }
+   .link-b-creds a{ position: relative; left: .4rem;
+   }
   .card-login  form {
 
     width: 100% !important;

@@ -54,7 +54,7 @@
       <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
       <div class="content ">
         <div class="container">
-          <div class="col-md-4 ml-auto mr-auto">
+          <div class="col-md-4 ml-auto mr-auto cred-col">
             <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
               <div class="card card-login card-plain">
                 <div class="card-header ">
@@ -84,14 +84,14 @@
                 <div class="card-footer cred-footer ">
                   <button type="submit" class="btn btn-round btn btn-outline-info btn-lg btn-block mb-3 creds-btn" >Welcom Back</button>
 
-                  <div class="pull-left  white-text pl-3 pt-2">
+                  <div class="pull-left link-b-creds white-text pl-3 pt-2">
                     <% if devise_mapping.rememberable? %>
                       <%= f.label :remember_me, "Remember Me", class: 'deviselabels' %>&nbsp;
                       <%= f.check_box :remember_me %>
                     <% end %>
 
                   </div>
-                  <div class="pull-right pr-3">
+                  <div class="pull-right link-b-creds pr-3">
                     <h6> </h6>
                     <p class="white-text change-to-white " >
                          <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
