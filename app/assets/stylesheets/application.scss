@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ .creds-btn { background-color: #dcdde1 !important; color: black;}
 @media only screen and (max-width: 600px) {
      .brand h1 {
          font-size: 2.3rem !important;
@@ -39,7 +40,9 @@
 
 }
 
-
+.full-page {
+  min-height: 100vh;
+}
 @media (max-width: 1246px) {
   .footer-distributed{
   padding: 0px;
@@ -246,6 +249,7 @@
 .grey-tex{color: #4B515D !important;}
 .black-text{color: #212121 !important;}
 .success {color: #1289A7 !important;}
+.cool-blue-text { color: #40739e !important;}
 
 .margin-top {
   margin-top: 70px !important;
@@ -345,21 +349,25 @@
   margin-top: 40px;
 }
 
-.footer-distributed .footer-icons a{
+.footer-distributed i{
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 55px;
   cursor: pointer;
   background-color:  #33383b;
-  border-radius: 2px;
+  border-radius: 0px;
 
   font-size: 20px;
-  color: #ffffff;
+  color: #ffffff  !important;
   text-align: center;
   line-height: 35px;
+  margin-top: 25.8px;
+   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  // margin-right: 80px;
+  text-align: center;
+  padding-top: 5px;
+padding-left: 4px;
 
-  margin-right: 3px;
-  margin-bottom: 5px;
 }
 
 /* Footer Right */
@@ -372,7 +380,7 @@
   display: inline-block;
   vertical-align: top;
   margin: 15px 42px 0 0;
-  color: #ffffff;
+  color: #40739e;
 }
 
 /* The contact form */
@@ -386,7 +394,7 @@
   display: block;
   border-radius: 0px;
   box-sizing: border-box;
-  background-color:  #212121;
+  background-color:  #353b48;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
   border: none;
   resize: none;
@@ -431,16 +439,16 @@
   border: 0;
   padding: 15px 50px;
   font-weight: bold;
+  max-width: 97.3% !important;
 
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
+.footer-distributed label{
 
+margin-left: -50px;
 
-
-
-.label-white {
-  color: #fff !important;
+   color: #40739e;
 }
 
 input[type=radio],
@@ -461,7 +469,7 @@ input[type=radio],
 }
 .form-herder {
   border-bottom-color: white !important;
-  width: 916PX;
+  width: 1031PX;
   margin-left: 1.9% !important;
   padding-top: 0px;
   margin-top: 0px;
@@ -476,4 +484,7 @@ input[type=radio],
   height: 2.36rem !important;
   margin-top: .6rem;
 
+}
+.text-center {
+  text-align: center !important;
 }

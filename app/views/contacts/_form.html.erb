@@ -1,25 +1,187 @@
 
-<%= simple_form_for(@contact) do |f| %>
-  <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :prefix %>
-    <%= f.input :first_name %>
-    <%= f.input :middle_intial %>
-    <%= f.input :last_name %>
-    <%= f.input :title %>
-    <%= f.input :cell %>
-    <%= f.input :phone %>
-    <%= f.input :fax %>
-    <%= f.input :bussiness_email %>
-    <%= f.input :personal_email %>
-    <%= f.input :extra_email %>
-    <%= f.input :user_id %>
-    <%= f.input :category_id %>
-    <%= f.input :company_id %>
+<div class="card-body ">
+
+    <%= simple_form_for(@contact) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-6">
+
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class=" fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+  <%= f.input :first_name, class: '' %>
+
+            </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2 white-text"></i></span>
+              </div>
+              <div class="col-md-11">
+
+               <%= f.input :prefix, class: '' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class=" fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+
+           <%= f.input :cell %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+
+               <%= f.input :middle_intial, class: '' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+
+             <%= f.input :last_name, class: '' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+               <%= f.input :fax %>
+
+
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+
+            <%= f.input :title, class: '' %>
+              </div>
+               <div class="col-md-10">
+                  <button type="submit" class="btn  btn-round btn-block ml-0 mr-0 btn-primary" style="width: 100% !important;">Submit</button>
+               </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+          <div class="col-md-6">
+
+            <div class="row mb-2">
+                <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+
+              <%= f.input :bussiness_email, class: ' input-full' %>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+              <%= f.input :personal_email, class: '' %>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+
+               <%= f.input :extra_email %>
+               </div>
+            </div>
+
+
+
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+
+              <%= f.input :phone %>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+                <%= f.input :user_id %>
+
+               </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-1">
+                <span><i class="fa fa-user pr-2"></i></span>
+              </div>
+              <div class="col-md-11">
+
+
+
+            <%= f.input :category_id %>
+                </div>
+
+            </div>
+
+            <div class="row mb-1">
+              <div class="col-md-1">
+                <span><i class=" fa fa-user pr-2"></i></span>
+              </div>
+            <div class="col-md-11 ">
+
+      <%= f.input :company_id %>
+            </div>
+
+
+
+            </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+   </div>
+
+   <% end %>
+
+
+
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+

@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
   get "/:page" => "pages#show"
+  get '/home' => "pages#home", as: :user_root
 end
