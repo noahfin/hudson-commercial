@@ -313,7 +313,7 @@
   font: bold 16px sans-serif;
   text-align: left;
 
-  padding: 5px 60px 40px;
+  // padding: 5px 60px 40px;
 
   overflow: hidden;
 }
@@ -355,9 +355,7 @@
 
 /* Footer social icons */
 
-.footer-distributed .footer-icons{
-  margin-top: 40px;
-}
+
 
 .footer-distributed i{
   display: inline-block;
@@ -382,14 +380,10 @@ padding-left: 4px;
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
-  float: right;
-}
+
 
 .footer-distributed .footer-right p{
-  display: inline-block;
-  vertical-align: top;
-  margin: 15px 42px 0 0;
+
   color: #40739e;
 }
 
@@ -414,10 +408,12 @@ padding-left: 4px;
   font-weight: normal;
   color:  #d1d2d2;
 
-  width: 400px;
+  width: 100%;
   padding: 18px;
 }
+.form-check-input {
 
+}
 .footer-distributed ::-webkit-input-placeholder {
   color:  #5c666b;
 }
@@ -469,14 +465,31 @@ input[type=radio],
 
 .form-checkbox input{
     width: auto;
+    margin-top: 80px;
+    border-color: #fff;
 }
 
 .form-check-sign {
   margin-left: 20px !important;
+  margin-top: 100px !important;
 }
 .form-check {
-  margin: 30.5px 0px;
+  margin: 20.5px 10px;
 }
+.check-i-width {
+  min-width: 100%;
+  padding-right: 10px;
+  margin: auto !important;
+}
+.form-check-sign{
+  text-align: center !important;
+  margin: auto;
+}
+.form-check-input {
+    position: absolute;
+  top: -20px !important;
+}
+.form-check-input {display: block;}
 .form-herder {
   border-bottom-color: white !important;
   width: 1031PX;
@@ -497,4 +510,22 @@ input[type=radio],
 }
 .text-center {
   text-align: center !important;
+}
+.form-check-sign {
+  margin-top: -40px !important;
+}
+.form-check-sign {
+position: absolute;
+ top: 40px;
+ left: -17px;
+}
+.card-body form {width: 100%;}
+.p-check {
+  margin-top: -70px;
+  margin-left: 11px;
+}
+.last-in-company {
+  width: 95%;
+  padding-left: 30px;
+
 }

@@ -4,18 +4,20 @@
 <div class="">
 
   <div class="footer-distributed main-form white-text rounded-0">
-    <div class="container-8 ">
+    <div class="container-fluid ">
 
 
-<h4 class="card-title cool-blue-text ">New company</h4>
+<h4 class="card-title cool-blue-text margin-top ml-4 pt-3 mb-0">New company</h4>
 
 
 <div class="pl-4">
 
 
 <%= render 'form', company: @company %>
+<div class="ml-4">
+  <%= link_to 'Back', companies_path %>
+</div>
 
-<%= link_to 'Back', companies_path %>
 </div>
 </div>
 </div>

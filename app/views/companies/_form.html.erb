@@ -1,142 +1,150 @@
 
-
-
 <div class="card-body ">
-
-    <%= simple_form_for(@company) do |f| %>
-      <%= f.error_notification %>
-
-      <div class="form-group">
-        <div class="row">
-          <div class="col-md-6">
+   <%= simple_form_for(@company) do |f| %>
+   <%= f.error_notification %>
+   <div class="form-group">
+      <div class="row">
+         <div class="col-md-4">
             <div class="row mb-2">
-              <div class="col-md-10">
-              <%= f.input :name, class: 'form-control input-full' %>
-
-            </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col-md-10">
-              <%= f.input :fax, class: 'form-control' %>
-              </div>
-            </div>
-
-            <div class="row mb-2">
-              <div class="col-md-10">
-              <%= f.input :industry, class: 'form-control' %>
-              </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col-md-10">
-              <%= f.input :sic_code, class: 'form-control' %>
-              </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col-md-10">
-              <%= f.input :source_of_name, class: 'form-control' %>
-              </div>
-               <div class="row mb-2">
-              <div class="col-md-10">
-              <%= f.input :suite, class: 'form-control input-full' %>
-              </div>
-            </div>
-               <div class="col-md-10">
-                  <button type="submit" class="btn col-md-6 btn-round ml-0 mr-0 btn-primary">Submit</button>
+               <div class="col-md-1">
+                  <span><i class=" fa fa-home pr-2"></i></span>
+               </div>
+               <div class="col-md-11">
+                  <%= f.input :name %>
                </div>
             </div>
-
-
-
-
-
-
-
-
-          </div>
-          <div class="col-md-6">
             <div class="row mb-2">
-
-            </div>
-
-
-            <div class="row mb-2">
-              <div class="col-md-10">
-              <%= f.input :total_employees, class: 'form-control' %>
-              </div>
-            </div>
-
-            <div class="row mb-2">
-              <div class="col-md-10">
-               <%= f.input :location_requirements, class: 'form-control' %>
+               <div class="col-md-1">
+                  <span><i class="fa fa-phone pr-2 white-text"></i></span>
+               </div>
+               <div class="col-md-11">
+                  <%= f.input :phone %>
                </div>
             </div>
-
-
             <div class="row mb-2">
-              <div class="col-md-10">
-              <%= f.input :year_founded, class: 'form-control' %>
-              </div>
+               <div class="col-md-1">
+                  <span><i class="fa fa-fax pr-2 white-text"></i></span>
+               </div>
+               <div class="col-md-11">
+                  <%= f.input :fax %>
+               </div>
             </div>
+            <div class="row mb-2">
+               <div class="col-md-1">
+                  <span><i class="fa fa-truck pr-2"></i></span>
+               </div>
+               <div class="col-md-11">
+                  <%= f.input :location_requirements, class: '' %>
+                  </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="row mb-2">
+               <div class="col-md-1">
+                  <span><i class="fa fa-user-secret pr-2"></i></span>
+               </div>
+               <div class="col-md-11">
+                  <%= f.input :source_of_name %>
+               </div>
+            </div>
+            <div class="row mb-2">
+               <div class="col-md-1">
+                  <span><i class="fa fa-user-plus pr-2"></i></span>
+               </div>
+               <div class="col-md-11">
+                  <%= f.input :total_employees %>
+               </div>
+            </div>
+            <div class="row mb-2">
+               <div class="col-md-1">
+                  <span><i class="fa fa-barcode pr-2"></i></span>
+               </div>
+               <div class="col-md-11">
+                  <%= f.input :sic_code %>
+               </div>
+            </div>
+            <div class="row mb-2">
+               <div class="col-md-1">
+                  <span><i class="fa fa-calendar pr-2"></i></span>
+               </div>
+               <div class="col-md-11">
+                  <%= f.input :year_founded %>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
             <div class="row">
-                <div class="col-md-6">
-
-
-
-            <div class="row mb-2">
-              <div class="col-md-10">
-              <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[data_checked]"><label class="boolean optional form-check-labe" for="data_checked"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[data_checked]" id="data_checked"><span class="form-check-sign"> &nbsp; &nbsp;Data Checked</span></label></div>
-
-
+               <div class="col-md-3">
+                  <div class="row">
+                     <div class="col-md-2">
+                        <span class=""><i class="fa fa-check pr-2"></i></span>
+                     </div>
+                     <div class="col-md-10">
+                        <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[data_checked]"><label class="boolean optional form-check-labe" for="data_checked"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[data_checked]" id="data_checked"></label><span id="data-checked-span" class="form-check-sign"> </span></div>
+                     </div>
+                     <p class="p-check">Checked</p>
+                  </div>
                </div>
-
-
-            </div>
-             <div class="row mb-2">
-              <div class="col-md-10">
-
-             <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[exclussive]"><label class="boolean optional form-check-labe" for="exclussive"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[exclussive]" id="exclussive"><span class="form-check-sign"> &nbsp; &nbsp;Exclussive?</span></label></div>
-
+               <div class="col-md-3">
+                  <div class="row ">
+                     <div class="col-md-2">
+                        <span><i class="fa fa-check-square pr-2"></i></span>
+                     </div>
+                     <div class="col-md-10">
+                        <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[exclussive]"><label class="boolean optional form-check-labe" for="exclussive"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[exclussive]" id="exclussive"></label><span class="form-check-sign"> </span></div>
+                     </div>
+                     <p class="p-check">Exclussive?</p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="row ">
+                     <div class="col-md-2">
+                        <span><i class="fa fa-bolt pr-2"></i></span>
+                     </div>
+                     <div class="col-md-10">
+                        <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[active]"><label class="boolean optional form-check-labe" for="active"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[active]" id="active"></label><span class="form-check-sign"> &nbsp; &nbsp;</span></div>
+                     </div>
+                     <p class="p-check">Active?</p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="row ">
+                     <div class="col-md-2">
+                        <span><i class="fa fa-building pr-2"></i></span>
+                     </div>
+                     <div class="col-md-10">
+                        <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[owns]"><label class="boolean optional form-check-labe" for="owns"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[owns]" id="owns"></label><span class="form-check-sign"> &nbsp; &nbsp;</span></div>
+                     </div>
+                     <p class="p-check">Owns?</p>
+                  </div>
                </div>
             </div>
-             <div class="row mb-2">
-              <div class="col-md-10">
-
-              <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[active]"><label class="boolean optional form-check-labe" for="active"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[active]" id="active"><span class="form-check-sign"> &nbsp; &nbsp;Active?</span></label></div>
-
+            <div class="row mb">
+               <div class="col-md-3">
+                  <div class="row mb-2">
+                     <div class="col-md-2">
+                        <span><i class="fa fa-building pr-2"></i></span>
+                     </div>
+                     <div class="col-md-10">
+                        <div class="form-check form-check-radio mb-4"><input value="0" type="hidden" name="company[rents]"><label class="boolean optional form-check-labe" for="rents"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[rents]" id="rents"><span class="form-check-sign"> &nbsp; &nbsp;</span></label></div>
+                     </div>
+                     <p class="p-check mt-4 ml-3 pl-1">Rents?</p>
+                  </div>
+               </div>
+               <div class="col-md-9">
+                  <div class="row mb-2">
+                     <div class="col-md-1">
+                        <span><i class=" fa fa-star pr-2"></i></span>
+                     </div>
+                     <div class="col-md-11 mb-3 last-in-company">
+                        <%= f.input :industry %>
+                     </div>
+                     <button type="submit" class="btn  btn-round btn-block mt-4 ml-0 ml-3 col-md mr-3 btn-primary">Submit</button>
+                  </div>
                </div>
             </div>
-
-            </div>
-
-              <div class="col-md-6">
-
-
-              <div class="row mb-2">
-              <div class="col-md-10">
-             <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[owns]"><label class="boolean optional form-check-labe" for="owns"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[owns]" id="owns"><span class="form-check-sign"> &nbsp; &nbsp;Owns?</span></label></div>
-
-              </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col-md-10">
-              <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[rents]"><label class="boolean optional form-check-labe" for="rents"><input class="boolean optional form-check-input" class="form-check-input" type="radio" value="1" name="company[rents]" id="rents"><span class="form-check-sign"> &nbsp; &nbsp;Rents?</span></label></div>
-              </div>
-            </div>
-
-            </div>
-
-            </div>
-          </div>
-
-
-        </div>
+         </div>
       </div>
    </div>
-
    <% end %>
-
-
-
-
-
-
+</div>
